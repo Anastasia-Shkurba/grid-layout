@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>CSS Grid Layout</title>
+</head>
+
+<body>
+  <div class="container">
+    <section class="architectural">
+      <h2 class="title architectural__title">Architectural Photography</h2>
+
+      <div class="layout architectural__layout">
+        <div class="gallery-item layout__gallery-item">
+          <div class="gallery-item__btns">
+            <button class="gallery-item__btn gallery-item__btn--like">
+              <img src="img/icons/heart.svg" alt="like">
+            </button>
+            <a class="gallery-item__btn gallery-item__btn--download">
+              <img src="img/icons/download.svg" alt="download">
+            </a>
+          </div>
+
+          <img class="gallery-item__image" src="img/archy/jezael.jpg" alt="tower">
+
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">Jezael Melgoza</p>
+            <p class="gallery-item__date">5 June 2020</p>
+          </div>
+        </div>
+
+        <div class="gallery-item layout__gallery-item gallery-item--wide">
+          <img class="gallery-item__image" src="img/archy/tom.jpg" alt="street">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">Tom W</p>
+            <p class="gallery-item__date">30 March 2021</p>
+          </div>
+        </div>
+
+        <div class="gallery-item layout__gallery-item gallery-item--wide">
+          <img class="gallery-item__image" src="img/archy/johan.jpg" alt="wall">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">Johan Mouchet</p>
+            <p class="gallery-item__date">14 August 2019</p>
+          </div>
+        </div>
+
+        <div class="gallery-item layout__gallery-item">
+          <img class="gallery-item__image" src="img/archy/federico.jpg" alt="church">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">Federico Di Dio</p>
+            <p class="gallery-item__date">29 October 2020 </p>
+          </div>
+        </div>
+
+        <div class="gallery-item layout__gallery-item">
+          <img class="gallery-item__image" src="img/archy/casey.jpg" alt="night street">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">Casey Horner</p>
+            <p class="gallery-item__date">9 July 2021</p>
+          </div>
+        </div>
+
+        <div class="gallery-item layout__gallery-item gallery-item--wide">
+          <img class="gallery-item__image" src="img/archy/alexander.jpg" alt="bridge">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">Alexander Rotker</p>
+            <p class="gallery-item__date">22 April 2022</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="nature">
+      <h2 class="title nature__title">Still Life Photography</h2>
+
+      <div class="layout nature__layout">
+        <div class="gallery-item layout__gallery-item">
+          <img class="gallery-item__image" src="img/nature/robert.jpg" alt="waterfall">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">Robert Lukeman</p>
+            <p class="gallery-item__date">30 June 2020</p>
+          </div>
+        </div>
+
+        <div class="gallery-item layout__gallery-item">
+          <img class="gallery-item__image" src="img/nature/sean.jpg" alt="ocean">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">Sean Oulashin</p>
+            <p class="gallery-item__date">5 September 2019</p>
+          </div>
+        </div>
+
+        <div class="gallery-item layout__gallery-item">
+          <img class="gallery-item__image" src="img/nature/john.jpg" alt="stone">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">John Fowler</p>
+            <p class="gallery-item__date">10 August 2021</p>
+          </div>
+        </div>
+
+        <div class="gallery-item layout__gallery-item">
+          <img class="gallery-item__image" src="img/nature/dave.jpg" alt="lake">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">Dave Hoefler</p>
+            <p class="gallery-item__date">13 February 2021</p>
+          </div>
+        </div>
+
+        <div class="gallery-item layout__gallery-item">
+          <img class="gallery-item__image" src="img/nature/leonard.jpg" alt="field">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">Léonard Cotte</p>
+            <p class="gallery-item__date">5 September 2019</p>
+          </div>
+        </div>
+
+        <div class="gallery-item layout__gallery-item">
+          <img class="gallery-item__image" src="img/nature/rob.jpg" alt="">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">Rob Mulally</p>
+            <p class="gallery-item__date">30 May 2020</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portrait">
+      <h2 class="title portrait__title">Portrait and Fashion Photography</h2>
+
+      <div class="layout portrait__layout">
+        <div class="gallery-item layout__gallery-item">
+          <img class="gallery-item__image" src="img/fash/pooja.jpg" alt="dress">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">Pooja Chaudhary</p>
+            <p class="gallery-item__date">30 June 2020</p>
+          </div>
+        </div>
+
+        <div class="gallery-item layout__gallery-item">
+          <img class="gallery-item__image" src="img/fash/devn.jpg" alt="wall">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">devn</p>
+            <p class="gallery-item__date">30 June 2020</p>
+          </div>
+        </div>
+
+        <div class="gallery-item layout__gallery-item">
+          <img class="gallery-item__image" src="img/fash/dom.jpg" alt="yellow">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">Dom Hill</p>
+            <p class="gallery-item__date">13 October 2021</p>
+          </div>
+        </div>
+
+        <div class="gallery-item layout__gallery-item">
+          <img class="gallery-item__image" src="img/fash/seth.jpg" alt="beard">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">Seth Doyle</p>
+            <p class="gallery-item__date">30 May 2020</p>
+          </div>
+        </div>
+
+        <div class="gallery-item layout__gallery-item">
+          <img class="gallery-item__image" src="img/fash/sincerely.jpg" alt="hats">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">Sincerely Media</p>
+            <p class="gallery-item__date">7 January 2021</p>
+          </div>
+        </div>
+
+        <div class="gallery-item layout__gallery-item">
+          <img class="gallery-item__image" src="img/fash/glasses.jpg" alt="glasses">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">Seth Doyle</p>
+            <p class="gallery-item__date">30 June 2020</p>
+          </div>
+        </div>
+
+        <div class="gallery-item layout__gallery-item">
+          <img class="gallery-item__image" src="img/fash/noah.jpg" alt="orange">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">Noah Buscher</p>
+            <p class="gallery-item__date">13 February 2021</p>
+          </div>
+        </div>
+
+        <div class="gallery-item layout__gallery-item">
+          <img class="gallery-item__image" src="img/fash/melissa.jpg" alt="friends">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">Melissa Askew</p>
+            <p class="gallery-item__date">29 April 2021</p>
+          </div>
+        </div>
+
+        <div class="gallery-item layout__gallery-item">
+          <img class="gallery-item__image" src="img/fash/brook.jpg" alt="dreadlocks">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">Brooke Cagle</p>
+            <p class="gallery-item__date">5 August 2019</p>
+          </div>
+        </div>
+
+        <div class="gallery-item layout__gallery-item">
+          <img class="gallery-item__image" src="img/fash/clem.jpg" alt="couple">
+          <div class="gallery-item__info">
+            <p class="gallery-item__author">Clem Onojeghuo</p>
+            <p class="gallery-item__date">1 July 2021</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 120px 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Delius Unicase", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Photo */
+.gallery-item {
+  position: relative;
+  width: fit-content;
+  overflow: hidden;
+}
+
+.gallery-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    rgba(36, 31, 36, 1) 0%,
+    rgba(91, 91, 91, 0.45) 34%,
+    rgba(187, 186, 192, 0.26) 63%
+  );
+  z-index: 1;
+}
+
+.gallery-item--wide {
+  grid-column: span 2;
+}
+
+.gallery-item__image {
+  display: block;
+  border-radius: 20px;
+}
+
+.gallery-item__info {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  bottom: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  z-index: 2;
+}
+
+.gallery-item__author {
+  margin: 0;
+  font-weight: 500;
+  color: #fff;
+}
+
+.gallery-item__date {
+  margin: 0;
+  font-weight: 400;
+  color: #E0E0E0;
+}
+
+/* Buttons */
+.gallery-item__btns {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.gallery-item:not(:hover) .gallery-item__btns {
+  opacity: 0;
+}
+
+.gallery-item__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #E0E0E080;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.gallery-item__btn--like {
+  left: 20px;
+}
+
+.gallery-item__btn--download {
+  right: 20px;
+}
+
+.gallery-item__btn:hover {
+  opacity: 1;
+  background-color: #E0E0E0;
+}
+
+/* Architectural */
+.architectural__title {
+  margin: 0 0 80px;
+}
+
+/* Nature */
+.nature__title {
+  margin: 120px 0 80px;
+}
+
+/* Portrait*/
+.portrait__title {
+  margin: 120px 0 80px;
+}
