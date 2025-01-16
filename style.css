@@ -29,6 +29,24 @@ body {
   overflow: hidden;
 }
 
+.gallery-item--wide {
+  grid-column: span 2;
+}
+
+.gallery-item--tall {
+  grid-row: span 2;
+}
+
+.gallery-item--yellow-position {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+.gallery-item--orange-position {
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+}
+
 .gallery-item::before {
   content: "";
   position: absolute;
@@ -47,8 +65,13 @@ body {
   z-index: 1;
 }
 
-.gallery-item--wide {
-  grid-column: span 2;
+.gallery-item:hover::before {
+  background: linear-gradient(
+    to top,
+    rgba(36, 31, 36, 1) 1%,
+    rgba(91, 91, 91, 0.26) 7%,
+    rgba(187, 186, 192, 0) 12%
+  );
 }
 
 .gallery-item__image {
@@ -115,7 +138,7 @@ body {
 
 .gallery-item__btn:hover {
   opacity: 1;
-  background-color: #E0E0E0;
+  background-color: #fff;
 }
 
 /* Architectural */
